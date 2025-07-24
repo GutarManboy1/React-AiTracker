@@ -21,15 +21,15 @@ export default function Home() {
             applications.
           </h2>
         </div>
-      </section>
 
-      {resumes.length > 0 && (
-        <div className="resumes-section">
-          {resumes.map((resume) => (
-            <ResumeCard key={resume.id} resume={resume} />
-          ))}
-        </div>
-      )}
+        {resumes.length > 0 && (
+          <div className="resumes-section">
+            {resumes.map((resume) => (
+              <ResumeCard key={resume.id} resume={resume} />
+            ))}
+          </div>
+        )}
+      </section>
     </main>
   );
 }
